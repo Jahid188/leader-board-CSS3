@@ -3,11 +3,57 @@
 
 /* common styles or utilities */
 body{
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: rgb(250, 235, 215);
 }
-/* header styles */
 
+/* header styles */
+header{
+    background: rgb(86, 46, 255);
+    padding:10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+header .nav-container{
+    width: 900px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display:flex;
+}
+.logo img{
+    width:45px;
+}
+.navigation{
+    display:flex;
+}
+.navigation-items{
+    display:flex;
+    align-items: center;
+
+
+}
+.navigation-items li{
+    list-style: none;
+    padding:0 20px;
+}
+.navigation-items li a{
+    color:#ffffff;
+    text-decoration: none;
+
+}
+.navigation-items li a:hover{
+    color:#000000;
+}
+.avatar{
+    display:flex;
+    align-items: center;
+    margin-left: 10px;
+}
 
 
 /* top players style */
@@ -173,6 +219,38 @@ main{
         margin-top: 10px;
         margin-left: 15px;
     }
+}
+
+/* footer area */
+#footer_area{
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(86, 46, 255);
+    display: flex;
+    justify-content: center;
+}
+.foot-container{
+    width: 900px;
+    padding: 10px 30px;
+    border-radius:5px 5px 0 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer_area .logo img{
+width:30px;
+}
+.social_icons{
+    display: flex;
+}
+.social_icons ion-icon{
+    padding-top: 10px;
+    margin-left:15px;
+    font-size:20px;
+    color:#fff;
+}
+.social_icons ion-icon:hover{
+    color:#FF4A60;
 }
 
 @media only screen and (min-width:688px) and (max-width:992px) {
