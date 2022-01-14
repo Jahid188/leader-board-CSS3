@@ -4,8 +4,10 @@
 /* common styles or utilities */
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: antiquewhite;
+    background-color: rgb(250, 235, 215);
 }
+/* header styles */
+
 
 
 /* top players style */
@@ -39,6 +41,15 @@ main{
 .player{
     display: flex;
     align-items: center;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.player:hover{
+    border-radius: 100px;
+    box-shadow: 5px 5px 10px grey;
+    background-color: rgba(250, 235, 215, 0.438);
+    cursor: pointer;
 }
 .player img{
     width: 56px;
@@ -58,6 +69,14 @@ main{
 }
 .blog{
     display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.blog:hover{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+    background-color: rgba(250, 235, 215, 0.438);
+    cursor: pointer;
 }
 .blog .thumbnail img{
     width: 177px;
@@ -102,9 +121,13 @@ main{
 .course{
     width: 250px;
     background-color: rgb(247, 243, 242);
-    box-shadow: 2px 2px 10px gray;
+    box-shadow: 2px 2px 10px rgb(128, 128, 128);
     border-radius: 10px;
     padding: 15px 3px 15px 15px;
+}
+.course:hover{
+    background-image: linear-gradient(rgba(128, 128, 128, 0.274), rgb(247, 243, 242));
+    cursor: pointer;
 }
 .course-title a{
     text-decoration: none;
